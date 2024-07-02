@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border-radius: 50%;
+    width: 65px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #282828;
+}
+
+.logo {
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+/* Style the search field */
+
+form.example input[type="text"] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+
+/* Style the submit button */
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+
+/* Clear floats */
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+form.example {
+    position: fixed;
+    right: 50%;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    text-align: right;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 3;
+    padding: 20px;
+}
+
+.featured,
+.latest-release {
+    margin-bottom: 20px;
+}
+
+.featured {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-item {
+    text-align: center;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.featured-item img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.latest-release ul {
+    list-style: none;
+    padding: 0;
+}
+
+.latest-release li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.latest-release img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.spotify-playlists {
+    padding: 20px 40px;
+}
+
+.spotify-playlists h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlists .list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.spotify-playlists .list .item {
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover {
+    background-color: #0a0909;
+}
+
+.spotify-playlists .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlists .list .item .play {
+    position: relative;
+}
+
+.spotify-playlists .list .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.spotify-playlists .list .item h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.queue {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 5px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.queue ul {
+    list-style: none;
+    padding: 0;
+}
+
+.queue li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.queue img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #1db954;
+}
